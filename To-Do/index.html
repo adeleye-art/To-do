@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Grouped Todo App</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Todo App</h1>
+        <div class="form">
+            <input type="text" id="task" placeholder="Add a new task">
+            <select id="category">
+                <option value="Work">Work</option>
+                <option value="Personal">Personal</option>
+                <option value="Life">Life</option>
+                <option value="Other">Other</option>
+            </select>
+            <select id="stage">
+                <option value="New">New</option>
+                <option value="Ongoing">Ongoing</option>
+                <option value="Finished">Finished</option>
+            </select>
+            <button onclick="addTask()">Add Task</button>
+        </div>
+        <ul class="tabs">
+            <li onclick="showCategory('Work')">Work</li>
+            <li onclick="showCategory('Personal')">Personal</li>
+            <li onclick="showCategory('Life')">Life</li>
+            <li onclick="showCategory('Other')">Other</li>
+        </ul>
+        <div id="categoryContainer" class="category-container">
+            <!-- Category sections will be dynamically generated here -->
+        </div>
+        <ul id="taskList"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"name": "texting chat gbt",
+			"path": "."
+		},
+		{
+			"name": "img",
+			"path": "../T0-do/assests/img"
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5501,
+		"liveServer.settings.multiRootWorkspaceName": "texting chat gbt"
+	}
+}
