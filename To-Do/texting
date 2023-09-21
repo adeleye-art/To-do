@@ -1,7 +1,7 @@
 {
 	"folders": [
 		{
-			"name": "texting chat gbt",
+			"name": "text",
 			"path": "."
 		},
 		{
@@ -11,6 +11,6 @@
 	],
 	"settings": {
 		"liveServer.settings.port": 5501,
-		"liveServer.settings.multiRootWorkspaceName": "texting chat gbt"
+		"liveServer.settings.multiRootWorkspaceName": "textig"
 	}
 }
