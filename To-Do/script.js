@@ -19,10 +19,10 @@ async function init() {
   const storedTasks = localStorage.getItem('tasks');
 
   if (storedTasks) {
-    // If tasks are found in local storage, parse and set them in the 'tasks' array
+    
     tasks = JSON.parse(storedTasks);
   } else {
-    // If no tasks are found in local storage, fetch them from the API and store them
+    
     const fetchedTasks = await fetchTasks();
     tasks = fetchedTasks.map(task => ({
       id: task.id,
@@ -52,7 +52,7 @@ function saveTasks() {
 
 // Function to add a new task
 async function addTask() {
-  // Retrieve input values (task, category, and stage)
+ 
   const taskInput = document.getElementById('task');
   const categorySelect = document.getElementById('category');
   const stageSelect = document.getElementById('stage');
@@ -60,7 +60,6 @@ async function addTask() {
   const category = categorySelect.value;
   const stage = stageSelect.value;
 
-  // Check if the task input is not empty
   if (task !== '') {
     // Create a new task object with an ID, task name, category, and stage
     const newTask = {
@@ -191,7 +190,7 @@ async function updateStage(id, newStage) {
 async function updateTaskInAPI(id, updatedTask) {
   try {
     const response = await fetch(`https://jsonplaceholder.typicode.com/todos/${id}`, {
-      method: 'PUT', // or 'PATCH' depending on your API
+      method: 'PUT', 
       body: JSON.stringify(updatedTask),
       headers: {
         'Content-type': 'application/json; charset=UTF-8',
